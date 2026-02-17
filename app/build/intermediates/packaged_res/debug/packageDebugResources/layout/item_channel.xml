@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="56dp"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp">
+
+    <View
+        android:id="@+id/channelFocusBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/channel_selected"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/channelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Channel name" />
+
+        <TextView
+            android:id="@+id/channelEpg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#99FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="Now: News at 6"
+            tools:visibility="visible" />
+    </LinearLayout>
+</FrameLayout>

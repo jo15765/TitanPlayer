@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF03DAC5</color>
+    <color name="background_dark">#FF121212</color>
+    <color name="black">#FF000000</color>
+    <color name="channel_selected">#33FFFFFF</color>
+    <color name="primary">#FF6200EE</color>
+    <color name="primary_dark">#FF3700B3</color>
+    <color name="surface_dark">#FF1E1E1E</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="panel_width_collapsed">56dp</dimen>
+    <dimen name="panel_width_expanded">220dp</dimen>
+    <string name="app_name">Xtream TV</string>
+    <string name="back">Back</string>
+    <string name="category_visibility">Show categories in guide</string>
+    <string name="channels">Channels</string>
+    <string name="collapse">Hide channels</string>
+    <string name="continue_to_guide">Continue to guide</string>
+    <string name="done">Done</string>
+    <string name="expand">Show channels</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_countries">Loading countries…</string>
+    <string name="login">Connect</string>
+    <string name="login_error">Check URL, username and password</string>
+    <string name="login_title">Xtream TV Login</string>
+    <string name="no_channels">No channels loaded</string>
+    <string name="no_epg">—</string>
+    <string name="no_program_info">No program info</string>
+    <string name="now_playing">Now: %1$s</string>
+    <string name="other">Other</string>
+    <string name="password">Password</string>
+    <string name="search_categories_hint">Search categories…</string>
+    <string name="select_category">Select a category</string>
+    <string name="select_channel_to_watch">Select a channel from the list to start watching</string>
+    <string name="select_countries">Select countries to display</string>
+    <string name="select_countries_subtitle">Channels and categories are filtered by the countries you choose.</string>
+    <string name="settings">Settings</string>
+    <string name="today">Today</string>
+    <string name="username">Username</string>
+    <string name="whats_on_now">What\'s on now</string>
+    <string name="xtream_url">Server URL</string>
+    <string name="xtream_url_hint">http://server:port</string>
+    <style name="Theme.XtreamTV" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+    <style name="Theme.XtreamTV.Player" parent="Theme.XtreamTV">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

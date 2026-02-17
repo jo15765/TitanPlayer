@@ -1,0 +1,183 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.xtreamtvapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:5:5-79
+12-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:5:22-76
+13
+14    <uses-feature
+14-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:7:5-9:35
+15        android:name="android.software.leanback"
+15-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:8:9-49
+16        android:required="true" />
+16-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:9:9-32
+17    <uses-feature
+17-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:10:5-12:36
+18        android:name="android.hardware.touchscreen"
+18-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:11:9-52
+19        android:required="false" />
+19-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:12:9-33
+20
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[androidx.media3:media3-exoplayer:1.9.0] /Users/owner/.gradle/caches/9.1.0/transforms/a811464e2b2b23dfba7ee492f62ef5d6/transformed/media3-exoplayer-1.9.0/AndroidManifest.xml:23:5-68
+21-->[androidx.media3:media3-exoplayer:1.9.0] /Users/owner/.gradle/caches/9.1.0/transforms/a811464e2b2b23dfba7ee492f62ef5d6/transformed/media3-exoplayer-1.9.0/AndroidManifest.xml:23:22-65
+22
+23    <permission
+23-->[androidx.core:core:1.13.1] /Users/owner/.gradle/caches/9.1.0/transforms/1122c2a6d10d1c028b00f5b27ef9de6f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.xtreamtvapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.13.1] /Users/owner/.gradle/caches/9.1.0/transforms/1122c2a6d10d1c028b00f5b27ef9de6f/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.13.1] /Users/owner/.gradle/caches/9.1.0/transforms/1122c2a6d10d1c028b00f5b27ef9de6f/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.xtreamtvapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.13.1] /Users/owner/.gradle/caches/9.1.0/transforms/1122c2a6d10d1c028b00f5b27ef9de6f/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.13.1] /Users/owner/.gradle/caches/9.1.0/transforms/1122c2a6d10d1c028b00f5b27ef9de6f/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:14:5-48:19
+30        android:name="com.example.xtreamtvapp.XtreamTvApplication"
+30-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:15:9-44
+31        android:allowBackup="true"
+31-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:16:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.13.1] /Users/owner/.gradle/caches/9.1.0/transforms/1122c2a6d10d1c028b00f5b27ef9de6f/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+33        android:banner="@drawable/tv_banner"
+33-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:17:9-45
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:icon="@drawable/ic_launcher"
+36-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:18:9-45
+37        android:label="@string/app_name"
+37-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:19:9-41
+38        android:supportsRtl="true"
+38-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:20:9-35
+39        android:testOnly="true"
+40        android:theme="@style/Theme.XtreamTV"
+40-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:21:9-46
+41        android:usesCleartextTraffic="true" >
+41-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:22:9-44
+42        <activity
+42-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:24:9-34:20
+43            android:name="com.example.xtreamtvapp.ui.login.LoginActivity"
+43-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:25:13-51
+44            android:exported="true"
+44-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:26:13-36
+45            android:screenOrientation="landscape"
+45-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:27:13-50
+46            android:theme="@style/Theme.XtreamTV" >
+46-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:28:13-50
+47            <intent-filter>
+47-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:29:13-33:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:30:17-69
+48-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:30:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:31:17-77
+50-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:31:27-74
+51                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+51-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:32:17-86
+51-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:32:27-83
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:36:9-40:53
+55            android:name="com.example.xtreamtvapp.ui.country.CountrySelectionActivity"
+55-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:37:13-64
+56            android:exported="false"
+56-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:38:13-37
+57            android:screenOrientation="landscape"
+57-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:39:13-50
+58            android:theme="@style/Theme.XtreamTV" />
+58-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:40:13-50
+59        <activity
+59-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:42:9-47:60
+60            android:name="com.example.xtreamtvapp.ui.player.PlayerActivity"
+60-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:43:13-53
+61            android:configChanges="orientation|screenSize|keyboardHidden"
+61-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:46:13-74
+62            android:exported="false"
+62-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:44:13-37
+63            android:screenOrientation="landscape"
+63-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:45:13-50
+64            android:theme="@style/Theme.XtreamTV.Player" />
+64-->/Users/owner/AndroidStudioProjects/XtreamTVApp/app/src/main/AndroidManifest.xml:47:13-57
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.3.0] /Users/owner/.gradle/caches/9.1.0/transforms/c006f95a52f1490302cf9c525c91a0b6/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.3.0] /Users/owner/.gradle/caches/9.1.0/transforms/c006f95a52f1490302cf9c525c91a0b6/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+68            android:authorities="com.example.xtreamtvapp.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.3.0] /Users/owner/.gradle/caches/9.1.0/transforms/c006f95a52f1490302cf9c525c91a0b6/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.3.0] /Users/owner/.gradle/caches/9.1.0/transforms/c006f95a52f1490302cf9c525c91a0b6/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.3.0] /Users/owner/.gradle/caches/9.1.0/transforms/c006f95a52f1490302cf9c525c91a0b6/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.3.0] /Users/owner/.gradle/caches/9.1.0/transforms/c006f95a52f1490302cf9c525c91a0b6/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.3.0] /Users/owner/.gradle/caches/9.1.0/transforms/c006f95a52f1490302cf9c525c91a0b6/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/owner/.gradle/caches/9.1.0/transforms/1b4d464c4beddb1fca502cda11f9c476/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/owner/.gradle/caches/9.1.0/transforms/1b4d464c4beddb1fca502cda11f9c476/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:30:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.8.6] /Users/owner/.gradle/caches/9.1.0/transforms/1b4d464c4beddb1fca502cda11f9c476/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+78                android:value="androidx.startup" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+79        </provider>
+80
+81        <receiver
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+82            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+83            android:directBootAware="false"
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+84            android:enabled="true"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+85            android:exported="true"
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+86            android:permission="android.permission.DUMP" >
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+88                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+89            </intent-filter>
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+91                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+92            </intent-filter>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+94                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+97                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/owner/.gradle/caches/9.1.0/transforms/a74790f7eb2c9b6b2222b96098b615e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+98            </intent-filter>
+99        </receiver>
+100    </application>
+101
+102</manifest>

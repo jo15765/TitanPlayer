@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Right: EPG panel (default) or video player after channel selected -->
+    <FrameLayout
+        android:id="@+id/playerContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/panelChannels"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Right content: EPG placeholder or category EPG grid (until channel playing) -->
+        <FrameLayout
+            android:id="@+id/panelEpg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_dark"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/epgPlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_category"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/epgGridContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:padding="16dp">
+
+                <include
+                    android:id="@+id/epgGridWrapper"
+                    layout="@layout/view_epg_grid_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:show_buffering="when_playing"
+            app:use_controller="true" />
+
+        <!-- Overlay: back arrow, fullscreen (only visible when player is shown) -->
+        <FrameLayout
+            android:id="@+id/playerOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:clickable="false"
+            android:focusable="false">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="start|top"
+                android:layout_margin="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back"
+                android:focusable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_back_arrow"
+                android:tint="@color/white"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btnFullscreen"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|top"
+                android:layout_margin="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/fullscreen"
+                android:focusable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_fullscreen"
+                android:tint="@color/white"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <!-- Left: Category selector (width toggled in code: 56dp collapsed, 220dp expanded) -->
+    <LinearLayout
+        android:id="@+id/panelChannels"
+        android:layout_width="@dimen/panel_width_expanded"
+        android:layout_height="0dp"
+        android:minWidth="56dp"
+        android:background="@color/surface_dark"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/settings"
+                android:focusable="true"
+                android:padding="6dp"
+                android:src="@drawable/ic_settings_cog"
+                android:tint="@color/white" />
+
+            <Button
+                android:id="@+id/btnToggleChannels"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_primary"
+                android:focusable="true"
+                android:text="@string/collapse"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/progressChannels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingVertical="8dp"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideInset"
+            tools:listitem="@layout/item_category_row" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

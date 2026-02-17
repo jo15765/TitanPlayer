@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/item_channel.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/item_channel.xml"
+    },
+    {
+        "merged": "com.example.xtreamtvapp-mergeDebugResources-35:/layout/activity_country_selection.xml",
+        "source": "com.example.xtreamtvapp-main-38:/layout/activity_country_selection.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/view_epg_grid_wrapper.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/view_epg_grid_wrapper.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/item_category_row.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/item_category_row.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/activity_player.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/activity_player.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/item_epg_row.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/item_epg_row.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/activity_country_selection.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/activity_country_selection.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/dialog_category_settings.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/dialog_category_settings.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/item_category_checkbox.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/item_category_checkbox.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/activity_login.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/item_country_checkbox.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/item_country_checkbox.xml"
+    },
+    {
+        "merged": "com.example.xtreamtvapp-mergeDebugResources-35:/layout/activity_player.xml",
+        "source": "com.example.xtreamtvapp-main-38:/layout/activity_player.xml"
+    },
+    {
+        "merged": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-mergeDebugResources-35:/layout/item_category_header.xml",
+        "source": "/Users/owner/.gradle/daemon/9.1.0/com.example.xtreamtvapp-main-38:/layout/item_category_header.xml"
+    }
+]
